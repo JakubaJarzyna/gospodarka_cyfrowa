@@ -1,0 +1,20 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Oct 16 12:40:02 2023
+
+@author: nowy
+"""
+
+def zbior_imion(liczba_imion=5):
+    lista_imion = []
+
+    for i in range(liczba_imion):
+        imie = input(f"Wprowadź imię {i + 1}: ")
+        lista_imion.append(imie)
+
+    return lista_imion
+
+if __name__ == "__main__":
+    imiona = zbior_imion()
+    print(f"Zebrane imiona: {imiona}")

@@ -1,0 +1,24 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Oct 16 12:44:17 2023
+
+@author: nowy
+"""
+
+def pomnoz_przez_2_v1(lista):
+    for i in range(len(lista)):
+        lista[i] *= 2
+    return lista
+
+def pomnoz_przez_2_v2(lista):
+    return [x * 2 for x in lista]
+
+lista_liczb = [1, 2, 3, 4, 5]
+print("Oryginalna lista:", lista_liczb)
+
+wynik_v1 = pomnoz_przez_2_v1(lista_liczb.copy())  # Używamy .copy(), aby oryginalna lista nie była modyfikowana
+print("Wynik z użyciem pętli for:", wynik_v1)
+
+wynik_v2 = pomnoz_przez_2_v2(lista_liczb)
+print("Wynik z użyciem listy składowej:", wynik_v2)
