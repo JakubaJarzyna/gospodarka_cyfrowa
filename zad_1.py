@@ -1,13 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Mon Nov 13 12:25:37 2023
+Created on Mon Dec 18 09:59:15 2023
 
 @author: nowy
 """
-# Kodowanie: utf-8
 
 name = input("Podaj imię: ")
 surname = input("Podaj nazwisko: ")
-print("Cześć", name, surname)
-
+print(f"Cześć {name} {surname}")

@@ -1,18 +1,17 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Mon Nov 20 12:47:24 2023
+Created on Mon Dec 18 10:02:56 2023
 
 @author: nowy
 """
 
-def sprawdz_czy_parzysta(liczba):
-    """Zwraca 0, jeśli liczba jest parzysta, w przeciwnym razie zwraca resztę z dzielenia przez 2."""
-    return liczba % 2
+def check_evenness(number):
+    return number % 2 == 0
 
-liczba = int(input("Wprowadź liczbę: "))
+number = int(input("Wprowadź liczbę: "))
 
-if sprawdz_czy_parzysta(liczba) == 0:
+if check_evenness(number):
     print("Liczba parzysta")
 else:
     print("Liczba nieparzysta")

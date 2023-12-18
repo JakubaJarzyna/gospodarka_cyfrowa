@@ -1,18 +1,18 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Mon Nov 20 13:04:27 2023
+Created on Mon Dec 18 10:08:11 2023
 
 @author: nowy
 """
 
-def polacz_i_poteguj(lista1, lista2):
-    """Łączy dwie listy, usuwa duplikaty i zwraca nową listę z elementami podniesionymi do trzeciej potęgi."""
-    polaczona_lista = list(set(lista1 + lista2))
-    lista_wynikow = [element ** 3 for element in polaczona_lista]
-    return lista_wynikow
 
-lista_a = [1, 2, 3, 4, 5]
-lista_b = [3, 6, 5, 8, 9]
+def combine_and_cube(list1, list2):
+    combined_list = list(set(list1 + list2))
+    cubed_results = [element ** 3 for element in combined_list]
+    return cubed_results
 
-print(polacz_i_poteguj(lista_a, lista_b))
+list_a = [1, 2, 3, 4, 5]
+list_b = [3, 6, 5, 8, 9]
+
+print(combine_and_cube(list_a, list_b))
